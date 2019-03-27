@@ -1,0 +1,25 @@
+http://learnpythonthehardway.org/book/
+http://docs.python.org/2/tutorial/index.html
+
+interpreter:
+There's a file called idle.py in your Python installation directory in Lib\idlelib\idle.py.
+If you run that file with Python, then IDLE interpreter should start
+so to run it is like this in windows explorer: c:\Python27\pythonw.exe c:\Python27\Lib\idlelib\idle.py
+
+installing pika: is a module to create a comunication channel
+python -m pip install C:\Python27\Lib\site-packages\pika-0.13.1-py2.py3-none-any.whl
+
+
+rabbitmq:
+https://www.rabbitmq.com/install-windows.html
+ in order rabbitmq to work we need to install http://www.erlang.org/downloads as explained in https://www.rabbitmq.com/which-erlang.html 
+
+installing the sqlite db:
+download the db from http://www.sqlitetutorial.net/sqlite-sample-database
+and also see the instructions http://www.sqlitetutorial.net/download-install-sqlite/ to download and install from https://www.sqlite.org/download.html
+so to write SQLs go to http://www.sqlitetutorial.net/sqlite-commands/
+connect to db chinook: C:\sqlite>sqlite3 c:\sqlite\db\chinook.db
+connect to db sales: C:\sqlite>sqlite3 c:\sqlite\sales.db
+
+
+ 
