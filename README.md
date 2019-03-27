@@ -1,22 +1,14 @@
-: python עליך לכתוב שני מודולים ב  לכתוב  שני מודולים ב  ב 
-ההודעה תכיל נתיב  מלא לבסיס לב סיס .RABBITMQ 1. מודול השולח הודעה לתור הודעות מסוג  הודעה לתור הודעות מסוג  הודעות מסוג 
-שם ב  מדינה ושנה ב א לבסיסר הודעות מסוג ב ע ספר הודעות מסוג ות. ,SQLITE נתונים ב  מסוג 
-2. מודול המא לבסיסזין לתור וברגע קבלת ההודעה פותח את בסיס הנתונים ) לפי המיקום שנשלח לתור הודעות מסוג  וב ר הודעות מסוג ג ע קב לת ההודעה פותח הודעה לתור הודעות מסוג  א לבסיסת ב סיס הנתונים ב  ) לפי המיקום ב  שנשלח הודעה לתור הודעות מסוג 
-ב הודעה ( ומב צע א לבסיסת המשימות הב א לבסיסות :
-המכיל ר הודעות מסוג שימה של שם ב  מדינה ומספר הודעות מסוג  הר הודעות מסוג כישות שב וצעו ב ה. CSV 1. יציר הודעות מסוג ת קוב ץ 
-המכיל ר הודעות מסוג שימה של שם ב  מדינה ומספר הודעות מסוג  הפר הודעות מסוג יטים ב  שנקנו ב ה. CSV 2. יציר הודעות מסוג ת קוב ץ 
-המכיל שם ב  מדינה ור הודעות מסוג שימת כל הא לבסיסלב ומים ב  שנר הודעות מסוג כשו ב א לבסיסותה מדינה. JSON 3. יציר הודעות מסוג ת קוב ץ 
-המכיל א לבסיסת שם ב  הדיסק,המדינה,כמות המכיר הודעות מסוג ות והשנה. הדיסק צר הודעות מסוג יך לכתוב שני מודולים ב  XML 4. יציר הודעות מסוג ת קוב ץ 
-המדינה והשנה ( YYYY והכי נמכר הודעות מסוג  ב מדינה מסויימת הח הודעה לתור הודעות מסוג ל משנת ROCK להיות מסוג 
-SQL שא לבסיסלה זו יש לפתור הודעות מסוג  על ידי * .) RABBIT נשלח הודעה לתור הודעות מסוג ים ב  כפר הודעות מסוג מטר הודעות מסוג  ב הודעת ה
-.PYTHON ב לב ד)מתוך לכתוב שני מודולים ב  הקוד( ולא לבסיס על ידי מניפולציות ב 
-5. יציר הודעות מסוג ת 3 טב לא לבסיסות ב ב סיס הנתונים ב  המכילות א לבסיסת המידע מסעיפים ב  2.1,2.2 ו 2.4
-3. תשתיות
-יש לציין לתור וברגע קבלת ההודעה פותח את בסיס הנתונים ) לפי המיקום שנשלח א לבסיסת הג ר הודעות מסוג סה. – PYTHON 1. הקוד יכתב  ב 
-https://www.rabbitmq.com : 2. תור הודעות מסוג  ההודעות – יש להתקין לתור וברגע קבלת ההודעה פותח את בסיס הנתונים ) לפי המיקום שנשלח א לבסיסת התור הודעות מסוג  מהא לבסיסתר הודעות מסוג  הב א לבסיס
-SAMPLE ולהור הודעות מסוג יד א לבסיסת ה .SQLITE 3. ב סיס נתונים ב  – יש להתקין לתור וברגע קבלת ההודעה פותח את בסיס הנתונים ) לפי המיקום שנשלח ב סיס נתונים ב  מסוג 
-כל http://www.sqlitetutorial.net/sqlite-sample-database : מהא לבסיסתר הודעות מסוג  הב א לבסיס DATABSE
-הנתונים ב  הר הודעות מסוג לוונטים ב  למב ח הודעה לתור הודעות מסוג ן לתור וברגע קבלת ההודעה פותח את בסיס הנתונים ) לפי המיקום שנשלח זה קיימים ב  ב ב סיס הנתונים ב  הנ"ל.
-ולש להעלות את הפרוייקט ללוח חזרה למייל לינק לפרוייקט ל. github 4. י ש להעלות את הפרוייקט ל להעלות הפרוייקט ל את הפרוייקט ל הפרוייקט ל ל
- הודעה לתור הודעות מסוג ה
-done
+The Project:
+The python modules has been built by version 2.7.10:
+1. done , see send.py module attached file code, this is the message sender
+2. done , see receive.py module attached file code, this is the listener for any message 
+   For sub-sections, a python module named data_manager.py is used by the listener module
+   2.1 done , using the select_invoices_by_quantity method in data_manager
+   2.2 done , using the select_items_purchased method in data_manager
+   2.3 Not implemented, not enough time to
+   2.4 was done using the select_best_seller method in data_manager, but I have a problem implanting the entire sql query into the code.
+       See a query that wanted to run correctly in sqlite3 but in the python code it does not reveal what is bothering it. See attached file best_sellers.sql
+       The xml I did not manage to produce in the code, not enough time to
+   2.5 sludge using the create_table method in data_manager, for loading the table belongs to 2.4 not completed because of the same reason that is written in the above section
+  
+ In general, all the preparation of the infrastructure took time, but I succeeded. There is a file (sites & instructions.txt) that contains general information about how to do this
